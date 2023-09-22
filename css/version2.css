@@ -8,6 +8,11 @@ html {
     box-sizing: inherit; 
 }
 
+.photo p {
+    align-items: center
+    margin: 4rem
+}
+
 section {
     max-width: 50%; 
 }
@@ -15,14 +20,17 @@ section {
 article {
     box-sizing: border-box; 
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 0; 
     border: none;
     padding: 0;
 }
 
+.side {
+    flex: 1; 
+}
 
 
 body {
@@ -31,25 +39,16 @@ body {
 }
 
 .text {
-    background: #fff; 
     color: #000; 
-    padding: 2rem;
+    padding: 0;
     line-height: 1.5rem;
     align-items: center; 
-    margin: 3rem; 
+    margin: 6rem; 
     width: 600px; 
 }
 
 h2 {
-    text-align: center;
-}
-
-.photo p {
-    width: 600px; 
-}
-
-.photo {
-    justify-content: center; 
+    text-align: left;
 }
 
 
@@ -98,10 +97,10 @@ nav ul li {
 
 img {
     max-width: 100%; /* DO NOT delete or change this line */
-    align-items: center;
-    vertical-align: middle;
-    padding: 3rem; 
-    justify-content: center; 
+    align-items: top left;
+    vertical-align: text-top;
+    padding: 4rem; 
+    margin: 0.25rem 2rem;
 }
 
 footer {
@@ -112,6 +111,7 @@ footer {
     margin: 0;
     padding: 2rem; 
     justify-content: center; 
+
 }
 
 /* ----- SUGGESTED COLORS -----
